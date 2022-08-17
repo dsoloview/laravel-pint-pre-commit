@@ -16,11 +16,11 @@ composer require dsoloview/laravel-pint-pre-commit
 
 To add githook
 ```bash
-php artisan install:pint-githook
+php artisan pint-githook:install
 ```
 To remove githook
 ```bash
-php artisan remove:pint-githook
+php artisan pint-githook:remove
 ```
 
 ### License
