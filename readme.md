@@ -1,8 +1,8 @@
 
 # Laravel Pint githook
-**Git pre-commit hook** for Laravel Pint
-**Automatically** formats and saves the year on commit
-You no longer need to run the **./vendor/bin/pint** command every time
+**Git pre-commit hook** for Laravel Pint  
+**Automatically** formats and saves code on commit  
+You no longer need to run the **./vendor/bin/pint** command every time  
 ### Requirements:
 
 - PHP 8+
