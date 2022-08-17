@@ -10,9 +10,6 @@ class HookInstaller
     {
         if ($this->checkGitDirectory()) {
             copy($this->link, $this->getHookSavePath());
-        } else {
-            echo "Can't find git repository";
-            exit(1);
         }
     }
 
