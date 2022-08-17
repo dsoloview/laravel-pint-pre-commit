@@ -11,6 +11,7 @@ class ServiceProvider extends Base
     {
         $this->commands([
             GitHookInstallCommand::class,
+            GitHookRemoveCommand::class,
         ]);
     }
 

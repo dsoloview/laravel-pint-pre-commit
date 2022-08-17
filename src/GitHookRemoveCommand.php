@@ -4,10 +4,10 @@ namespace dsoloview\LaravelPintPreCommit;
 
 use Illuminate\Console\Command;
 
-class GitHookInstallCommand extends Command
+class GitHookRemoveCommand extends Command
 {
 
-    protected $signature = 'install:pint-githook';
+    protected $signature = 'remove:pint-githook';
 
     protected $description = 'Add Laravel Pint pre-commit githook';
 
@@ -15,12 +15,12 @@ class GitHookInstallCommand extends Command
     {
         try {
             $hookInstaller = new HookInstaller();
-            $hookInstaller->addHook();
+            $hookInstaller->removeHook();
 
-            $this->info('Laravel Pint githook installed');
+            $this->info('Laravel Pint githook removed');
         }
         catch (\Throwable $exception) {
-            $this->error('Laravel Pint githook installation error');
+            $this->error('Laravel Pint githook deletion error');
         }
     }
 
