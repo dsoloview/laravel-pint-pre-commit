@@ -1,0 +1,29 @@
+{
+  "name": "dsoloview/laravel-pint-pre-commit",
+  "description": "Laravel Pint pre-commit git hook",
+  "type": "library",
+  "keywords": ["Laravel", "Pint", "Githook", "Hook", "pre-commit"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitry Soloviev",
+      "email": "dsoloview44@gmail.com"
+    }
+  ],
+
+  "minimum-stability": "stable",
+  "require": {
+    "laravel/pint": "^1.1"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "dsoloview\\LaravelPintPreCommit\\": "src/"
+    }
+  },
+
+  "scripts": {
+    "post-install-cmd": "dsoloview\\LaravelPintPreCommit\\ComposerScript::install",
+    "post-update-cmd": "dsoloview\\LaravelPintPreCommit\\ComposerScript::install"
+  }
+}
