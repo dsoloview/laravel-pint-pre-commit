@@ -13,6 +13,13 @@ class HookInstaller
         }
     }
 
+    public function removeHook(): void
+    {
+        if ($this->checkGitDirectory()) {
+            unlink($this->getHookSavePath());
+        }
+    }
+
     private function getGitDirectory(): string
     {
         return base_path() . DIRECTORY_SEPARATOR . '.git' . DIRECTORY_SEPARATOR . 'hooks';
@@ -27,4 +34,5 @@ class HookInstaller
     {
         return $this->getGitDirectory() . DIRECTORY_SEPARATOR . 'pre-commit';
     }
+
 }
