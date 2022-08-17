@@ -25,6 +25,8 @@
 
   "scripts": {
     "post-install-cmd": "dsoloview\\LaravelPintPreCommit\\ComposerScript::install",
-    "post-update-cmd": "dsoloview\\LaravelPintPreCommit\\ComposerScript::install"
+    "post-update-cmd": "dsoloview\\LaravelPintPreCommit\\ComposerScript::install",
+    "post-package-install": "dsoloview\\LaravelPintPreCommit\\ComposerScript::install",
+    "post-package-update": "dsoloview\\LaravelPintPreCommit\\ComposerScript::install"
   }
 }
