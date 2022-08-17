@@ -1,15 +1,16 @@
 <?php
 
-namespace dsoloview\LaravelPintPreCommit;
+namespace dsoloview\LaravelPintPreCommit\Commands;
 
+use dsoloview\LaravelPintPreCommit\HookInstaller;
 use Illuminate\Console\Command;
 
 class GitHookRemoveCommand extends Command
 {
 
-    protected $signature = 'remove:pint-githook';
+    protected $signature = 'pint-githook:remove';
 
-    protected $description = 'Add Laravel Pint pre-commit githook';
+    protected $description = 'Remove Laravel Pint pre-commit githook';
 
     public function handle()
     {

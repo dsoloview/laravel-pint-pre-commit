@@ -1,15 +1,16 @@
 <?php
 
-namespace dsoloview\LaravelPintPreCommit;
+namespace dsoloview\LaravelPintPreCommit\Commands;
 
+use dsoloview\LaravelPintPreCommit\HookInstaller;
 use Illuminate\Console\Command;
 
 class GitHookInstallCommand extends Command
 {
 
-    protected $signature = 'install:pint-githook';
+    protected $signature = 'pint-githook:install';
 
-    protected $description = 'Add Laravel Pint pre-commit githook';
+    protected $description = 'Install Laravel Pint pre-commit githook';
 
     public function handle()
     {
