@@ -13,6 +13,7 @@
 
   "minimum-stability": "stable",
   "require": {
+    "php": "^8",
     "laravel/pint": "^1.1"
   },
 
